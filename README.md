@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# 🎁 Shared-Wishlist-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the **frontend** of the **Shared Wishlist-App** project — a collaborative wishlist app that lets users create, share, and manage wishlists and products in real-time.
+---
+## ⚙️ Tech Stack
 
-## Available Scripts
+- **React.js** – UI library for building interactive user interfaces
+- **React Router** – For client-side routing
+- **Axios** – For API communication with the backend
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **JWT (stored in localStorage)** – For session persistence
+- **React Hooks** – For state and lifecycle management
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📁 Folder Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Shared-Wishlist-Frontend/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Route-based pages (Login, Dashboard, WishlistDetail)
+│ ├── api.js # Axios instance for API calls
+│ ├── App.js # Main app router
+│ └── index.js # React DOM entry
+├── tailwind.config.js # Tailwind CSS configuration
+├── package.json # Dependencies and scripts
+└── README.md # You’re here!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+1. Clone the Repository
+   git clone https://github.com/your-username/Shared-Wishlist-Frontend.git
+   cd Shared-Wishlist-Frontend
+   
+2. Install Dependencies
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Start the Development Server
+npm start
 
-### `npm run build`
+The frontend will run at:
+👉 http://localhost:3000
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+⚠️ Make sure the backend (usually on port 5000) runs for full functionality.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🔒 Authentication
+Users must sign up or log in to use the app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Upon successful login, the JWT token is saved in localStorage.
 
-### `npm run eject`
+The token is attached to outgoing API requests using Axios interceptors.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🧪 Features Overview
+✅ Login / Sign Up
+✅ Create & Delete Wishlists
+✅ Add, Edit & Remove Products
+✅ Timestamp for when a product was added
+✅ User-based permissions and visual indication
+✅ Responsive UI with Tailwind
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
